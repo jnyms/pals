@@ -4,7 +4,11 @@
     <title>GoList</title>
     <style>
       body {
-        background: #F1FDF8;
+        background-image: url(clouds.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 80px;
+        background-color: #eaf7f2;
         padding: 0px;
         text-align: left;
         margin: 0;
@@ -85,7 +89,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="transition">
     <div id="holder">
       <div id="content">      
         <svg id="logo" width="121" height="33" viewBox="0 0 121 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,6 +106,5 @@
       </div>
       <div id="phone"></div>
     </div>
-
   </body>
 </html>
