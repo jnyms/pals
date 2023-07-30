@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300,400;500;600;700;800&display=swap");
+
 html {
   font-size: 16px;
 }
@@ -5,9 +7,13 @@ body {
   background: #000;
   text-align: center;
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Manrope", sans-serif;
   color: rgba(255, 255, 255, 0.65);
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .mb-0 {
@@ -31,26 +37,28 @@ body {
 
 a {
   color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
 h1.hero {
-  margin: 4rem 0 2rem 0;
-  font-weight: 300;
+  margin: 2rem 0 0 0;
+  font-weight: 500;
 }
 h1,
 h2 {
   color: #fff;
 }
 h1 {
-  font-size: 2.5rem;
-  letter-spacing: -0.03em;
+  font-size: 2rem;
+  letter-spacing: 0em;
   margin: 0 0 0.5em 0;
-  font-weight: 400;
+  font-weight: 500;
 }
 h2 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 2rem;
-  margin: -0.75rem 0 1.5rem 0;
-  letter-spacing: -0.03em;
+  margin: -0.75rem 0 2rem 0;
+  letter-spacing: -0.01em;
 }
 img.screens {
   width: 100%;
@@ -65,24 +73,24 @@ p.lead {
 section {
   padding: 1rem 1rem;
   box-sizing: border-box;
-  margin: 2rem;
+  margin: 1rem 2rem;
 }
 .container {
   max-width: 800px;
   margin: 0 auto;
 }
 span.tag {
-  padding: 0.5rem 0.75rem;
+  padding: 0.4rem 0.75rem;
   /* background: #fff; */
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 1.5rem;
   color: #fff;
-  font-weight: 500;
-  letter-spacing: -0.01em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 .container.positively {
   /* background: linear-gradient(0deg, #593cbe 0%, #0c1340 100%); */
-  background: linear-gradient(0deg, #302e38 0%, #151518 100%);
+  background: linear-gradient(180deg, #302e38 0%, #151518 100%);
   /* margin: 32px; */
   border-radius: 2rem;
   text-align: center;
@@ -91,11 +99,44 @@ span.tag {
   flex-direction: column;
   padding: 2rem;
 }
+.container.content {
+  background: linear-gradient(180deg, #302e38 0%, #151518 600px);
+  border-radius: 2rem;
+  text-align: left;
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  padding: 2rem;
+}
+
 .container.screens {
   padding: 0;
 }
 img.icon {
   width: 200px;
+  transition: 0.3s ease;
+}
+img.icon:hover {
+  transform: scale(0.98) translateY(2px);
+}
+img.icon.small {
+  width: 80px;
+  margin: 0 0 10px -10px;
+}
+
+footer {
+  margin-top: auto;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 0;
+}
+footer p {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 440px) {
   html {
