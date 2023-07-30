@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  line-height: 1.4;
 }
 
 .mb-0 {
@@ -47,17 +48,18 @@ h1.hero {
 h1,
 h2 {
   color: #fff;
+  line-height: 1.2;
 }
 h1 {
   font-size: 2rem;
-  letter-spacing: 0em;
-  margin: 0 0 0.5em 0;
-  font-weight: 500;
+  margin: 1em 0 0.5em 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  margin: -0.75rem 0 2rem 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 1em 0 1rem 0;
   letter-spacing: -0.01em;
 }
 img.screens {
@@ -73,7 +75,7 @@ p.lead {
 section {
   padding: 1rem 1rem;
   box-sizing: border-box;
-  margin: 1rem 2rem;
+  margin: 1rem;
 }
 .container {
   max-width: 800px;
@@ -126,17 +128,19 @@ img.icon.small {
 
 footer {
   margin-top: auto;
+  padding: 1rem;
 }
 footer ul {
-  display: flex;
   list-style: none;
-  gap: 1rem;
-  justify-content: center;
+  padding: 0;
   margin-bottom: 0;
+}
+footer li {
+  display: inline-block;
+  margin: 0.25rem;
 }
 footer p {
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
 }
 @media (max-width: 440px) {
   html {
